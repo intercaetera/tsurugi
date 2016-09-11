@@ -6,7 +6,10 @@ A Netrunner card generator for reddit.
 
 `
 $ git clone http://github.com/mrhuds0n/tsurugi  
+
 $ cd tsurugi  
+
 $ npm install  
+
 $ npm start  
 `

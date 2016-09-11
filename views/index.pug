@@ -1,0 +1,99 @@
+html
+  head
+    title Tsurugi | Netrunner Markdown Card Generator
+    link(href="stylesheets/style.css",rel="stylesheet")
+    script(src="scripts/script.js")
+  body
+    .container
+      .jumbotron
+        h1 剣 Tsurugi
+        h3 Netrunner Markdown Generator
+      .content
+        form
+          .form-block#unique
+            .form-label #[b Unique]
+            input(type="checkbox").checkbox-input
+          .form-block#name
+            .form-label #[b Name]
+            input#name(type="text").text-input
+          .form-block#cost
+            .form-label#cost-label #[b Cost]
+            input#cost(type="text").text-input
+          .form-block#trash
+            .form-label#trash-label #[b Trash]
+            input#trash(type='text').text-input
+          .form-block#strength
+            .form-label#strength-label #[b Strength]
+            input#strength(type="text").text-input
+          .form-block#influence
+            .form-label #[b Influence]
+            select#influence-select
+              option -
+              option 0
+              option 1
+              option 2
+              option 3
+              option 4
+              option 5
+          .form-block#faction
+            .form-label #[b Faction]
+            select#faction-select
+              option Neutral
+              option Weyland
+              option Jinteki
+              option Haas-Bioroid
+              option NBN
+              option Shaper
+              option Criminal
+              option Anarch
+              option Adam
+              option Apex
+              option Sunny
+          .form-block#type
+            .form-label #[b Type]
+            select(onchange="changeLabels()")#type-select
+              option Asset
+              option Agenda
+              option ICE
+              option Upgrade
+              option Operation
+              option Program
+              option Hardware
+              option Resource
+              option Event
+              option Identity
+          .form-block#subtypes
+            .form-label #[b Subtypes]
+            input#subtypes(type='text').text-input
+          .form-block#text
+            .form-label #[b Card Text]
+            textarea#textarea.text-input
+          .form-block#controls
+            button(type="button" onclick="add('click')").control click
+            button(type="button" onclick="add('credit')").control credit
+            button(type="button" onclick="add('recur')").control recur
+            button(type="button" onclick="add('link')").control link
+            button(type="button" onclick="add('trash')").control trash
+            button(type="button" onclick="add('mem')").control mem
+            button(type="button" onclick="add('sub')").control sub
+          .form-block#flavour
+            .form-label #[b Flavour Text]
+            textarea#flavour.text-input
+          .form-block#submit
+            input(type='button', value='Make A Run', onclick="run()").submit-button
+          .form-block#result
+            .form-label #[b result]
+            textarea(readonly)#result-area
+
+//
+  Card Name - input
+  Text - box
+  Flavor - box
+  Faction - input
+  Unique - checkbox
+  Type - input
+  Subtypes - input
+  Cost - input
+  Strength - input
+  Influence - input
+//

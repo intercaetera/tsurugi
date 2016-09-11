@@ -1,0 +1,140 @@
+@import 'https://fonts.googleapis.com/css?family=Oxygen';
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  font-family: 'Oxygen', sans-serif;
+  background: url("/images/jinteki.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+.container {
+  max-width: 968px;
+  margin: auto;
+  background-color: rgba(255,255,255,0.7);
+}
+.jumbotron {
+  width: 100%;
+  height: 20%;
+  padding: 1%;
+  text-align: center;
+  border-bottom: 1px rgba(0,0,0,0.2) solid;
+}
+.jumbotron h1 {
+  font-size: 400%;
+  letter-spacing: -2px;
+}
+.jumbotron h3 {
+  font-size: 120%;
+}
+.content {
+  padding: 1%;
+  font-size: 70%;
+  text-transform: uppercase;
+  max-width: 500px;
+  margin: auto;
+  height: 120%;
+}
+.form-block {
+  padding: 16px;
+  float: left;
+}
+.form-block#unique {
+  width: 20%;
+}
+.form-block#name {
+  width: 60%;
+}
+.form-block#trash {
+  width: 20%;
+}
+.form-block#cost {
+  width: 20%;
+}
+.form-block#strength {
+  width: 20%;
+}
+.form-block#influence {
+  width: 20%;
+}
+.form-block#faction {
+  width: 40%;
+}
+.form-block#type {
+  width: 30%;
+}
+.form-block#subtypes {
+  width: 70%;
+}
+.form-block#text {
+  width: 100%;
+  height: 172px;
+}
+.form-block#flavour {
+  width: 100%;
+  height: 96px;
+}
+.form-block#submit {
+  width: 100%;
+}
+.form-block#controls {
+  width: 100%;
+}
+.form-block#result {
+  width: 100%;
+  height: 128px;
+}
+input.text-input,
+select,
+textarea {
+  width: 100%;
+  font-family: 'Oxygen', sans-serif;
+  background-color: #fff;
+  border: 2px #000 solid;
+  padding: 5px;
+  height: 32px;
+  font-size: 150%;
+  transition: 0.3s box-shadow;
+}
+select {
+  padding: 0;
+}
+.submit-button,
+.control {
+  width: 100%;
+  height: 32px;
+  background-color: rgba(0,0,0,0.6);
+  color: #fff;
+  border: 0;
+  text-transform: uppercase;
+  font-size: 100%;
+  font-weight: bold;
+  transition: 0.3s background-color;
+}
+.submit-button:hover,
+.control:hover {
+  background-color: #000;
+}
+.control {
+  width: 14.2%;
+  margin: auto;
+}
+textarea {
+  height: 100%;
+}
+input.checkbox-input {
+  height: 32px;
+  width: auto;
+  margin: auto;
+}
+.text-input,
+select {
+  width: 100%;
+}
+input.text-input:focus {
+  box-shadow: 0px 0px 10px #000;
+}

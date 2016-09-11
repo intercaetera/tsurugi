@@ -1,0 +1,28 @@
+{
+  "name": "redditcardgen",
+  "version": "0.0.1",
+  "description": "A nodejs app to generate Android Netrunner card templates using Express.",
+  "engines": {
+    "node": "5.9.1"
+  },
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "pug": "*",
+    "stylus": "*",
+    "nib": "*",
+    "express": "4.13.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heroku/node-js-getting-started"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
+}

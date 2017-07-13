@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "A nodejs app to generate Android Netrunner card templates using Express.",
   "engines": {
-    "node": "5.9.1"
+    "node": "8.1.4"
   },
   "main": "app.js",
   "scripts": {
